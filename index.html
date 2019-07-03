@@ -118,7 +118,6 @@
 
 
   </style>
-
   <script src="assets/library/jquery.min.js"></script>
   <script src="dist/components/visibility.min.js"></script>
   <script src="dist/components/sidebar.min.js"></script>
@@ -289,7 +288,8 @@
 	<h3 class="ui header" id="p3">>>Q&A问答环节</h3>	
 	<p>
 Q1.怎么样才能加入snert小组呢？<br>
-A：暑假就可以开始学习基础知识啦,有大佬带飞哦~（详细的请进群了解<br>
+A：暑假就可以开始学习基础知识啦（详细的请进群了解<br>
+<br>
 Q2.小组每年会招多少人呀？<br>
 A：人数是不定的，只要你够优秀<br>
 <br>
@@ -365,6 +365,16 @@ A：随时可以加入，而且没有专业限制<br>
     </div>
   </div>
 </div>
+
+<script>
+//fix sidebar scrolling bug
+if($(window).width()<701){
+  $("#sticky").remove();
+}
+
+/*BUG: when click on mobile, sidebar has wrong active.*/
+
+</script>
 <!--
 /***
  * ░░░░░░░░░░░░░░░░░░░░░░░░▄░░
@@ -381,15 +391,5 @@ A：随时可以加入，而且没有专业限制<br>
  */什么!居然看到了这里,最后一个彩蛋奉上,看着这可怜的小眼神,
  */难道还不想加入我们吗?嘤嘤嘤......
 -->
-
-<script>
-//fix sidebar scrolling bug
-if($(window).width()<701){
-  $("#sticky").remove();
-}
-
-/*BUG: when click on mobile, sidebar has wrong active.*/
-
-</script>
 </body>
 </html>
